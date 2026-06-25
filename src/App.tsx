@@ -86,7 +86,12 @@ export default function App() {
 
       setResult(data);
     } catch (err: any) {
-      setError(err.message || "فشل الاتصال بالخادم.");
+      const errorMessage = err.message || "فشل الاتصال بالخادم.";
+      if (errorMessage.includes("503") || errorMessage.includes("high demand") || errorMessage.includes("UNAVAILABLE")) {
+        setError("النظام يواجه ضغطاً عالياً حالياً. يرجى المحاولة مرة أخرى لاحقاً.");
+      } else {
+        setError(errorMessage);
+      }
     } finally {
       setIsAnalyzing(false);
     }
