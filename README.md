@@ -52,3 +52,36 @@ This repository is structured to ensure high performance, maintainability, and s
 ├── package.json         # Project dependencies and scripts[cite: 2]
 ├── tsconfig.json        # TypeScript compiler configurations[cite: 2]
 └── vite.config.ts       # Vite bundler settings[cite: 2]
+
+🚀 Getting Started (Local Setup)
+To run this Legal-Tech prototype locally, follow these steps:
+
+Clone the repository:
+
+Bash
+git clone [https://github.com/yourusername/transparent-ai-consent.git](https://github.com/yourusername/transparent-ai-consent.git)
+cd transparent-ai-consent
+Install dependencies:
+
+Bash
+npm install
+Environment Variables:
+Create a .env file in the root directory to store your credentials securely:
+
+Code snippet
+GEMINI_API_KEY=your_google_gemini_api_key_here
+DATABASE_URL=your_database_connection_string
+Initialize the Database:
+
+Bash
+npx prisma generate
+npx prisma db push
+Start the Development Server:
+Launch both the Vite frontend and the Node backend:
+
+Bash
+npm run dev
+🌍 Vision & Continental Impact
+As Egypt hosts the 2026 edition of this prestigious competition, this project reflects the nation's and the continent's commitment to digital sovereignty. By empowering the African youth and everyday citizens to understand their digital footprint, we force global tech platforms to adopt ethical transparency. This is more than a software tool; it is a scalable digital governance infrastructure.
+
+Developed with a deep commitment to legal integrity and robust software architecture.
