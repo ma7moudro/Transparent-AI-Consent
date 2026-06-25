@@ -1,0 +1,6 @@
+{
+  "name": "بوابة الموافقة الشفافة (Transparent AI Consent)",
+  "description": "أداة لتدقيق وتقييم سياسات الخصوصية باستخدام الذكاء الاصطناعي لاستخراج البيانات ومخاطر الاستخدام.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
